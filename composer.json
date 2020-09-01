@@ -15,16 +15,17 @@
         }
     ],
     "require": {
-        "php": ">=7.0",
-        "botman/botman": "~3.0"
+        "php": "^7.4",
+        "botman/botman": "dev-laravel7"
     },
     "require-dev": {
-        "botman/studio-addons": "~1.0",
-        "illuminate/support": "~5.5.0",
-        "phpunit/phpunit": "~5.0",
+        "botman/studio-addons": "dev-laravel7",
+        "botman/driver-facebook": "dev-laravel7",
+        "illuminate/support": "^7.0",
+        "phpunit/phpunit": "^8.5",
         "mockery/mockery": "dev-master",
-        "botman/driver-facebook": "~2.0",
-        "ext-curl": "*"
+        "ext-curl": "*",
+        "symfony/http-foundation": "^5.1"
     },
     "autoload": {
         "psr-4": {
@@ -51,5 +52,19 @@
         }
     },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/mikemiller891/botman-botman.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/mikemiller891/botman-studio-addons.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/mikemiller891/botman-driver-facebook.git"
+        }
+    ]
 }

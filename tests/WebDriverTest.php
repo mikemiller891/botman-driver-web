@@ -4,7 +4,7 @@ namespace Tests;
 
 use Mockery as m;
 use BotMan\BotMan\Http\Curl;
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 use BotMan\Drivers\Web\WebDriver;
 use BotMan\BotMan\Messages\Attachments\File;
 use BotMan\BotMan\Messages\Attachments\Audio;
@@ -27,7 +27,7 @@ use BotMan\Drivers\Facebook\Extensions\GenericTemplate;
 use BotMan\Drivers\Facebook\Extensions\ReceiptTemplate;
 use BotMan\Drivers\Facebook\Extensions\ReceiptAdjustment;
 
-class WebDriverTest extends PHPUnit_Framework_TestCase
+class WebDriverTest extends TestCase
 {
     /**
      * @param $responseData
